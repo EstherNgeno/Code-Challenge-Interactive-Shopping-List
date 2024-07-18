@@ -12,7 +12,6 @@ const createShoppingList = () => {
     console.log(shoppingListName.value);
     currentList.items = [];
 
-    // Web Service Call
     showShoppingList();
 };
 
