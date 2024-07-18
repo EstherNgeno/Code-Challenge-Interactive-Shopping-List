@@ -1,0 +1,132 @@
+body {
+    background-image: url(images/top-view-fruit-vegetables-reusable-bags.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover; 
+}
+
+#createListDiv, #shoppingListDiv {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;    
+}
+
+.row > button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #51dc7b;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+
+
+
+#createListDiv > button, #shoppingListDiv > button {
+    width: 100%;
+    padding: 16px 50px;
+    background-color: #51dc7b;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+#shoppingListItems > li> button {
+    width: 50px;
+    padding: 10px;
+    background-color: #51dc7b;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #51dc7b;
+}
+
+
+ul li{
+    list-style-type: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+   content: '';
+   position: absolute;
+   height: 28px;
+   width: 28px;
+   border-radius: 50%;
+   background-image: url(images/1713092.png);
+   background-size: cover;
+   background-position: center;
+   top: 12px;
+   left: 8px;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/check_5610944\ \(1\).png);
+}
